@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		C3E4AC4C1E2274DD009AA3B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E4AC4B1E2274DD009AA3B4 /* main.m */; };
 		C3E4AC4F1E2274DD009AA3B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E4AC4E1E2274DD009AA3B4 /* AppDelegate.m */; };
-		C3E4AC521E2274DD009AA3B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E4AC511E2274DD009AA3B4 /* ViewController.m */; };
 		C3E4AC551E2274DD009AA3B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E4AC531E2274DD009AA3B4 /* Main.storyboard */; };
 		C3E4AC581E2274DD009AA3B4 /* WiirlockExamplesObjc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3E4AC561E2274DD009AA3B4 /* WiirlockExamplesObjc.xcdatamodeld */; };
 		C3E4AC5A1E2274DD009AA3B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3E4AC591E2274DD009AA3B4 /* Assets.xcassets */; };
 		C3E4AC5D1E2274DD009AA3B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E4AC5B1E2274DD009AA3B4 /* LaunchScreen.storyboard */; };
 		C3E4AC681E2274DD009AA3B4 /* WiirlockExamplesObjcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E4AC671E2274DD009AA3B4 /* WiirlockExamplesObjcTests.m */; };
 		C3E4AC731E2274DD009AA3B4 /* WiirlockExamplesObjcUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E4AC721E2274DD009AA3B4 /* WiirlockExamplesObjcUITests.m */; };
+		C3E4AC881E2284E9009AA3B4 /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E4AC871E2284E9009AA3B4 /* MainMenu.m */; };
+		C3E4AC8B1E22875B009AA3B4 /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E4AC8A1E22875B009AA3B4 /* MenuCell.m */; };
+		C3E4AC8F1E228B83009AA3B4 /* TextOnImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E4AC8E1E228B83009AA3B4 /* TextOnImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +42,6 @@
 		C3E4AC4B1E2274DD009AA3B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C3E4AC4D1E2274DD009AA3B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C3E4AC4E1E2274DD009AA3B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C3E4AC501E2274DD009AA3B4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C3E4AC511E2274DD009AA3B4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C3E4AC541E2274DD009AA3B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3E4AC571E2274DD009AA3B4 /* WiirlockExamplesObjc.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WiirlockExamplesObjc.xcdatamodel; sourceTree = "<group>"; };
 		C3E4AC591E2274DD009AA3B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +53,12 @@
 		C3E4AC6E1E2274DD009AA3B4 /* WiirlockExamplesObjcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiirlockExamplesObjcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E4AC721E2274DD009AA3B4 /* WiirlockExamplesObjcUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WiirlockExamplesObjcUITests.m; sourceTree = "<group>"; };
 		C3E4AC741E2274DD009AA3B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3E4AC861E2284E9009AA3B4 /* MainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenu.h; sourceTree = "<group>"; };
+		C3E4AC871E2284E9009AA3B4 /* MainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenu.m; sourceTree = "<group>"; };
+		C3E4AC891E22875B009AA3B4 /* MenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuCell.h; sourceTree = "<group>"; };
+		C3E4AC8A1E22875B009AA3B4 /* MenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuCell.m; sourceTree = "<group>"; };
+		C3E4AC8D1E228B83009AA3B4 /* TextOnImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextOnImage.h; path = ViewControllers/TextOnImage.h; sourceTree = "<group>"; };
+		C3E4AC8E1E228B83009AA3B4 /* TextOnImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextOnImage.m; path = ViewControllers/TextOnImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,16 +109,19 @@
 		C3E4AC491E2274DD009AA3B4 /* WiirlockExamplesObjc */ = {
 			isa = PBXGroup;
 			children = (
+				C3E4AC8C1E228B61009AA3B4 /* ViewControllers */,
 				C3E4AC4D1E2274DD009AA3B4 /* AppDelegate.h */,
 				C3E4AC4E1E2274DD009AA3B4 /* AppDelegate.m */,
-				C3E4AC501E2274DD009AA3B4 /* ViewController.h */,
-				C3E4AC511E2274DD009AA3B4 /* ViewController.m */,
 				C3E4AC531E2274DD009AA3B4 /* Main.storyboard */,
 				C3E4AC591E2274DD009AA3B4 /* Assets.xcassets */,
 				C3E4AC5B1E2274DD009AA3B4 /* LaunchScreen.storyboard */,
 				C3E4AC5E1E2274DD009AA3B4 /* Info.plist */,
 				C3E4AC561E2274DD009AA3B4 /* WiirlockExamplesObjc.xcdatamodeld */,
 				C3E4AC4A1E2274DD009AA3B4 /* Supporting Files */,
+				C3E4AC861E2284E9009AA3B4 /* MainMenu.h */,
+				C3E4AC871E2284E9009AA3B4 /* MainMenu.m */,
+				C3E4AC891E22875B009AA3B4 /* MenuCell.h */,
+				C3E4AC8A1E22875B009AA3B4 /* MenuCell.m */,
 			);
 			path = WiirlockExamplesObjc;
 			sourceTree = "<group>";
@@ -141,6 +150,15 @@
 				C3E4AC741E2274DD009AA3B4 /* Info.plist */,
 			);
 			path = WiirlockExamplesObjcUITests;
+			sourceTree = "<group>";
+		};
+		C3E4AC8C1E228B61009AA3B4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3E4AC8D1E228B83009AA3B4 /* TextOnImage.h */,
+				C3E4AC8E1E228B83009AA3B4 /* TextOnImage.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,10 +294,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3E4AC521E2274DD009AA3B4 /* ViewController.m in Sources */,
 				C3E4AC4F1E2274DD009AA3B4 /* AppDelegate.m in Sources */,
 				C3E4AC581E2274DD009AA3B4 /* WiirlockExamplesObjc.xcdatamodeld in Sources */,
 				C3E4AC4C1E2274DD009AA3B4 /* main.m in Sources */,
+				C3E4AC881E2284E9009AA3B4 /* MainMenu.m in Sources */,
+				C3E4AC8B1E22875B009AA3B4 /* MenuCell.m in Sources */,
+				C3E4AC8F1E228B83009AA3B4 /* TextOnImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MenuCell.h
 //  WiirlockExamplesObjc
 //
 //  Created by Denis Andreev on 08/01/2017.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface MenuCell : UITableViewCell
 
+@property (nonatomic, strong) IBOutlet UILabel *menuLabel;
 
 @end
-
