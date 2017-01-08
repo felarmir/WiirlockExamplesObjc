@@ -18,6 +18,7 @@
 		C3E4AC881E2284E9009AA3B4 /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E4AC871E2284E9009AA3B4 /* MainMenu.m */; };
 		C3E4AC8B1E22875B009AA3B4 /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E4AC8A1E22875B009AA3B4 /* MenuCell.m */; };
 		C3E4AC8F1E228B83009AA3B4 /* TextOnImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E4AC8E1E228B83009AA3B4 /* TextOnImage.m */; };
+		C3E4AC921E22A94C009AA3B4 /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E4AC911E22A94C009AA3B4 /* ContactViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		C3E4AC8A1E22875B009AA3B4 /* MenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuCell.m; sourceTree = "<group>"; };
 		C3E4AC8D1E228B83009AA3B4 /* TextOnImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextOnImage.h; path = ViewControllers/TextOnImage.h; sourceTree = "<group>"; };
 		C3E4AC8E1E228B83009AA3B4 /* TextOnImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextOnImage.m; path = ViewControllers/TextOnImage.m; sourceTree = "<group>"; };
+		C3E4AC901E22A94C009AA3B4 /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactViewController.h; path = ViewControllers/ContactViewController.h; sourceTree = "<group>"; };
+		C3E4AC911E22A94C009AA3B4 /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactViewController.m; path = ViewControllers/ContactViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +160,8 @@
 			children = (
 				C3E4AC8D1E228B83009AA3B4 /* TextOnImage.h */,
 				C3E4AC8E1E228B83009AA3B4 /* TextOnImage.m */,
+				C3E4AC901E22A94C009AA3B4 /* ContactViewController.h */,
+				C3E4AC911E22A94C009AA3B4 /* ContactViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -294,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3E4AC921E22A94C009AA3B4 /* ContactViewController.m in Sources */,
 				C3E4AC4F1E2274DD009AA3B4 /* AppDelegate.m in Sources */,
 				C3E4AC581E2274DD009AA3B4 /* WiirlockExamplesObjc.xcdatamodeld in Sources */,
 				C3E4AC4C1E2274DD009AA3B4 /* main.m in Sources */,
