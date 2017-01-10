@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C303E4BB1E2400E000BCC44C /* ImageShowHideTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C303E4BA1E2400E000BCC44C /* ImageShowHideTVC.m */; };
+		C303E4BE1E24011900BCC44C /* ImageHSCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C303E4BD1E24011900BCC44C /* ImageHSCell.m */; };
 		C3E4AC4C1E2274DD009AA3B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E4AC4B1E2274DD009AA3B4 /* main.m */; };
 		C3E4AC4F1E2274DD009AA3B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E4AC4E1E2274DD009AA3B4 /* AppDelegate.m */; };
 		C3E4AC551E2274DD009AA3B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E4AC531E2274DD009AA3B4 /* Main.storyboard */; };
@@ -39,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C303E4B91E2400E000BCC44C /* ImageShowHideTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageShowHideTVC.h; sourceTree = "<group>"; };
+		C303E4BA1E2400E000BCC44C /* ImageShowHideTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageShowHideTVC.m; sourceTree = "<group>"; };
+		C303E4BC1E24011900BCC44C /* ImageHSCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageHSCell.h; sourceTree = "<group>"; };
+		C303E4BD1E24011900BCC44C /* ImageHSCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageHSCell.m; sourceTree = "<group>"; };
 		C3E4AC471E2274DD009AA3B4 /* WiirlockExamplesObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiirlockExamplesObjc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E4AC4B1E2274DD009AA3B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C3E4AC4D1E2274DD009AA3B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -162,6 +168,10 @@
 				C3E4AC8E1E228B83009AA3B4 /* TextOnImage.m */,
 				C3E4AC901E22A94C009AA3B4 /* ContactViewController.h */,
 				C3E4AC911E22A94C009AA3B4 /* ContactViewController.m */,
+				C303E4B91E2400E000BCC44C /* ImageShowHideTVC.h */,
+				C303E4BA1E2400E000BCC44C /* ImageShowHideTVC.m */,
+				C303E4BC1E24011900BCC44C /* ImageHSCell.h */,
+				C303E4BD1E24011900BCC44C /* ImageHSCell.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -299,11 +309,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C303E4BB1E2400E000BCC44C /* ImageShowHideTVC.m in Sources */,
 				C3E4AC921E22A94C009AA3B4 /* ContactViewController.m in Sources */,
 				C3E4AC4F1E2274DD009AA3B4 /* AppDelegate.m in Sources */,
 				C3E4AC581E2274DD009AA3B4 /* WiirlockExamplesObjc.xcdatamodeld in Sources */,
 				C3E4AC4C1E2274DD009AA3B4 /* main.m in Sources */,
 				C3E4AC881E2284E9009AA3B4 /* MainMenu.m in Sources */,
+				C303E4BE1E24011900BCC44C /* ImageHSCell.m in Sources */,
 				C3E4AC8B1E22875B009AA3B4 /* MenuCell.m in Sources */,
 				C3E4AC8F1E228B83009AA3B4 /* TextOnImage.m in Sources */,
 			);
@@ -535,6 +547,7 @@
 				C3E4AC791E2274DD009AA3B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3E4AC7A1E2274DD009AA3B4 /* Build configuration list for PBXNativeTarget "WiirlockExamplesObjcTests" */ = {
 			isa = XCConfigurationList;
@@ -543,6 +556,7 @@
 				C3E4AC7C1E2274DD009AA3B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3E4AC7D1E2274DD009AA3B4 /* Build configuration list for PBXNativeTarget "WiirlockExamplesObjcUITests" */ = {
 			isa = XCConfigurationList;
@@ -551,6 +565,7 @@
 				C3E4AC7F1E2274DD009AA3B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
