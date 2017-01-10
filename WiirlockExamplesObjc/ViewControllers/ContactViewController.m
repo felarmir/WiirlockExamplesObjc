@@ -8,6 +8,7 @@
 
 #import "ContactViewController.h"
 #import <Contacts/Contacts.h>
+#import "ContactCell.h"
 
 @interface ContactViewController ()
 
@@ -43,9 +44,9 @@
         NSError *error;
         CNContactStore *addressBook = [[CNContactStore alloc] init];
         [addressBook containersMatchingPredicate:[CNContainer predicateForContainersWithIdentifiers:@[addressBook.defaultContainerIdentifier]] error:&error];
-        NSArray *keyContact = @[CNContactGivenNameKey, CNContactFamilyNameKey, CNContactPhoneNumbersKey];
+        NSArray *keyContact = @[CNContactGivenNameKey, CNContactFamilyNameKey, CNContactPhoneNumbersKey, CNContactImageDataKey];
         CNContactFetchRequest *request = [[CNContactFetchRequest alloc] initWithKeysToFetch:keyContact];
-        BOOL success = [addressBook enumerateContactsWithFetchRequest:request error:&error usingBlock:^(CNContact * _Nonnull contact, BOOL * _Nonnull stop) {
+        [addressBook enumerateContactsWithFetchRequest:request error:&error usingBlock:^(CNContact * _Nonnull contact, BOOL * _Nonnull stop) {
             if (error) {
                 NSLog(@"Error:%@", error);
             } else {
@@ -74,14 +75,39 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CONTACT" forIndexPath:indexPath];
+    ContactCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CONTACT" forIndexPath:indexPath];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault  reuseIdentifier:@"CONTACT"];
+        cell = [[ContactCell alloc] initWithStyle:UITableViewCellStyleDefault  reuseIdentifier:@"CONTACT"];
     }
-    cell.textLabel.text = [[_arrayList objectAtIndex:indexPath.row] givenName];
+    
+    CNContact *contact = [_arrayList objectAtIndex:indexPath.row];
+    
+    cell.name.text = [contact givenName];
+    cell.fname.text = [contact familyName];
+    cell.phoneNumber.text = [[[[contact phoneNumbers] objectAtIndex:0] valueForKey:@"value"] valueForKey:@"digits"];
+    if ([contact imageData] != nil) {
+        cell.imageView.image = [UIImage imageWithData:[contact imageData]];
+    } else {
+        cell.imageView.image = [self setSimpleImage:[contact givenName] fname:[contact familyName]];
+    }
     return cell;
 }
 
+- (UIImage*)setSimpleImage:(NSString*)name fname:(NSString*)fname {
+    NSString *str = [NSString stringWithFormat:@"%@%@", [name substringToIndex:1], [fname substringToIndex:1]];
+    
+    UIColor *textColor = [UIColor whiteColor];
+    UIFont *textFont = [UIFont fontWithName:@"Helvetica Light" size:30];
+    NSMutableDictionary *attribute = [[NSMutableDictionary alloc] init];
+    [attribute setObject:textFont forKey:NSFontAttributeName];
+    [attribute setObject:textColor forKey:NSForegroundColorAttributeName];
+    CGRect rect = CGRectMake(5, 15, 61, 61);
+    UIGraphicsBeginImageContext(CGSizeMake(61.0, 61.0));
+    [str drawInRect:rect withAttributes:attribute];
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return img;
+}
 
 #pragma mark - Navigation
 

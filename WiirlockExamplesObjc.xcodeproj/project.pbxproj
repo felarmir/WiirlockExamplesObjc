@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C303E4BB1E2400E000BCC44C /* ImageShowHideTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C303E4BA1E2400E000BCC44C /* ImageShowHideTVC.m */; };
 		C303E4BE1E24011900BCC44C /* ImageHSCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C303E4BD1E24011900BCC44C /* ImageHSCell.m */; };
+		C340C9E21E2560E300D1E1B7 /* ContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C340C9E11E2560E300D1E1B7 /* ContactCell.m */; };
 		C3E4AC4C1E2274DD009AA3B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E4AC4B1E2274DD009AA3B4 /* main.m */; };
 		C3E4AC4F1E2274DD009AA3B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E4AC4E1E2274DD009AA3B4 /* AppDelegate.m */; };
 		C3E4AC551E2274DD009AA3B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E4AC531E2274DD009AA3B4 /* Main.storyboard */; };
@@ -45,6 +46,8 @@
 		C303E4BA1E2400E000BCC44C /* ImageShowHideTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageShowHideTVC.m; sourceTree = "<group>"; };
 		C303E4BC1E24011900BCC44C /* ImageHSCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageHSCell.h; sourceTree = "<group>"; };
 		C303E4BD1E24011900BCC44C /* ImageHSCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageHSCell.m; sourceTree = "<group>"; };
+		C340C9E01E2560E300D1E1B7 /* ContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactCell.h; sourceTree = "<group>"; };
+		C340C9E11E2560E300D1E1B7 /* ContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactCell.m; sourceTree = "<group>"; };
 		C3E4AC471E2274DD009AA3B4 /* WiirlockExamplesObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiirlockExamplesObjc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E4AC4B1E2274DD009AA3B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C3E4AC4D1E2274DD009AA3B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -172,6 +175,8 @@
 				C303E4BA1E2400E000BCC44C /* ImageShowHideTVC.m */,
 				C303E4BC1E24011900BCC44C /* ImageHSCell.h */,
 				C303E4BD1E24011900BCC44C /* ImageHSCell.m */,
+				C340C9E01E2560E300D1E1B7 /* ContactCell.h */,
+				C340C9E11E2560E300D1E1B7 /* ContactCell.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -309,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C340C9E21E2560E300D1E1B7 /* ContactCell.m in Sources */,
 				C303E4BB1E2400E000BCC44C /* ImageShowHideTVC.m in Sources */,
 				C3E4AC921E22A94C009AA3B4 /* ContactViewController.m in Sources */,
 				C3E4AC4F1E2274DD009AA3B4 /* AppDelegate.m in Sources */,
