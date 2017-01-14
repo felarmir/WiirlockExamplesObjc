@@ -12,6 +12,7 @@
 		C340C9E21E2560E300D1E1B7 /* ContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C340C9E11E2560E300D1E1B7 /* ContactCell.m */; };
 		C39B73521E29604100C618BC /* FileDownloadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C39B73511E29604100C618BC /* FileDownloadVC.m */; };
 		C39B73551E29611100C618BC /* WDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = C39B73541E29611100C618BC /* WDownloader.m */; };
+		C3B579321E2A2E7800D7C851 /* GardientLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B579311E2A2E7800D7C851 /* GardientLayerVC.m */; };
 		C3E4AC4C1E2274DD009AA3B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E4AC4B1E2274DD009AA3B4 /* main.m */; };
 		C3E4AC4F1E2274DD009AA3B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E4AC4E1E2274DD009AA3B4 /* AppDelegate.m */; };
 		C3E4AC551E2274DD009AA3B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E4AC531E2274DD009AA3B4 /* Main.storyboard */; };
@@ -54,6 +55,8 @@
 		C39B73511E29604100C618BC /* FileDownloadVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileDownloadVC.m; path = ViewControllers/FileDownloadVC.m; sourceTree = "<group>"; };
 		C39B73531E29611100C618BC /* WDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDownloader.h; sourceTree = "<group>"; };
 		C39B73541E29611100C618BC /* WDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDownloader.m; sourceTree = "<group>"; };
+		C3B579301E2A2E7800D7C851 /* GardientLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GardientLayerVC.h; sourceTree = "<group>"; };
+		C3B579311E2A2E7800D7C851 /* GardientLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GardientLayerVC.m; sourceTree = "<group>"; };
 		C3E4AC471E2274DD009AA3B4 /* WiirlockExamplesObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiirlockExamplesObjc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E4AC4B1E2274DD009AA3B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C3E4AC4D1E2274DD009AA3B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -187,6 +190,8 @@
 				C39B73511E29604100C618BC /* FileDownloadVC.m */,
 				C39B73531E29611100C618BC /* WDownloader.h */,
 				C39B73541E29611100C618BC /* WDownloader.m */,
+				C3B579301E2A2E7800D7C851 /* GardientLayerVC.h */,
+				C3B579311E2A2E7800D7C851 /* GardientLayerVC.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -330,6 +335,7 @@
 				C3E4AC921E22A94C009AA3B4 /* ContactViewController.m in Sources */,
 				C3E4AC4F1E2274DD009AA3B4 /* AppDelegate.m in Sources */,
 				C39B73521E29604100C618BC /* FileDownloadVC.m in Sources */,
+				C3B579321E2A2E7800D7C851 /* GardientLayerVC.m in Sources */,
 				C3E4AC581E2274DD009AA3B4 /* WiirlockExamplesObjc.xcdatamodeld in Sources */,
 				C3E4AC4C1E2274DD009AA3B4 /* main.m in Sources */,
 				C3E4AC881E2284E9009AA3B4 /* MainMenu.m in Sources */,
