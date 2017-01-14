@@ -343,7 +343,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SZz-hI-df5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SZz-hI-df5">
                                 <rect key="frame" x="16" y="72" width="343" height="304"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="304" id="aQI-y4-78D"/>
@@ -371,16 +371,55 @@
                                     <action selector="downloadFile:" destination="QeL-Pd-AeF" eventType="touchUpInside" id="dyc-FY-vbQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hpj-4s-9Vh">
+                                <rect key="frame" x="265" y="461" width="94" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Iff-9S-kiE"/>
+                                    <constraint firstAttribute="width" constant="94" id="mtf-Hp-W1O"/>
+                                </constraints>
+                                <state key="normal" title="Gaussian Blur"/>
+                                <connections>
+                                    <action selector="gaussFilter:" destination="QeL-Pd-AeF" eventType="touchUpInside" id="riW-aE-Ify"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seu-Lx-YIn">
+                                <rect key="frame" x="16" y="461" width="76" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="AU1-RB-aXI"/>
+                                    <constraint firstAttribute="height" constant="30" id="P69-NM-Nj6"/>
+                                </constraints>
+                                <state key="normal" title="Sepia Tone"/>
+                                <connections>
+                                    <action selector="sepiaFilter:" destination="QeL-Pd-AeF" eventType="touchUpInside" id="1fb-Ac-PL1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeD-NB-Nt8">
+                                <rect key="frame" x="159" y="461" width="57" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CnR-xI-xrp"/>
+                                    <constraint firstAttribute="width" constant="57" id="l0T-eI-A5k"/>
+                                </constraints>
+                                <state key="normal" title="Pixellate"/>
+                                <connections>
+                                    <action selector="pixelFilter:" destination="QeL-Pd-AeF" eventType="touchUpInside" id="hxk-Bs-dxp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="UIn-74-c7m" firstAttribute="top" secondItem="hJl-kT-QFh" secondAttribute="bottom" constant="8" id="BDB-0c-zjz"/>
                             <constraint firstItem="SZz-hI-df5" firstAttribute="top" secondItem="ROT-UJ-OxD" secondAttribute="bottom" constant="8" id="CPF-0q-CCu"/>
                             <constraint firstItem="IwR-tH-u2r" firstAttribute="leading" secondItem="dWW-Gi-iG7" secondAttribute="leadingMargin" id="EIa-Us-cmU"/>
+                            <constraint firstItem="jeD-NB-Nt8" firstAttribute="centerX" secondItem="dWW-Gi-iG7" secondAttribute="centerX" id="Jf5-tB-SBY"/>
                             <constraint firstItem="SZz-hI-df5" firstAttribute="leading" secondItem="dWW-Gi-iG7" secondAttribute="leadingMargin" id="NeQ-Ct-paN"/>
                             <constraint firstItem="hJl-kT-QFh" firstAttribute="top" secondItem="IwR-tH-u2r" secondAttribute="bottom" constant="8" id="PNh-he-1WZ"/>
+                            <constraint firstItem="Hpj-4s-9Vh" firstAttribute="trailing" secondItem="dWW-Gi-iG7" secondAttribute="trailingMargin" id="PjP-FY-wZJ"/>
+                            <constraint firstItem="Hpj-4s-9Vh" firstAttribute="top" secondItem="hJl-kT-QFh" secondAttribute="bottom" constant="46" id="UQ0-yf-Hqm"/>
+                            <constraint firstItem="seu-Lx-YIn" firstAttribute="leading" secondItem="dWW-Gi-iG7" secondAttribute="leadingMargin" id="kZ4-yg-b6A"/>
+                            <constraint firstItem="seu-Lx-YIn" firstAttribute="top" secondItem="hJl-kT-QFh" secondAttribute="bottom" constant="46" id="luy-Yc-QJl"/>
                             <constraint firstItem="hJl-kT-QFh" firstAttribute="trailing" secondItem="dWW-Gi-iG7" secondAttribute="trailingMargin" id="m8A-ik-8j1"/>
                             <constraint firstItem="IwR-tH-u2r" firstAttribute="top" secondItem="SZz-hI-df5" secondAttribute="bottom" constant="8" id="oek-Wp-cF4"/>
+                            <constraint firstItem="jeD-NB-Nt8" firstAttribute="top" secondItem="UIn-74-c7m" secondAttribute="bottom" constant="8" id="pcJ-WE-I1a"/>
                             <constraint firstItem="hJl-kT-QFh" firstAttribute="leading" secondItem="dWW-Gi-iG7" secondAttribute="leadingMargin" id="tJR-2U-4Cl"/>
                             <constraint firstItem="UIn-74-c7m" firstAttribute="centerX" secondItem="dWW-Gi-iG7" secondAttribute="centerX" id="tTO-Ib-GMD"/>
                             <constraint firstItem="SZz-hI-df5" firstAttribute="trailing" secondItem="dWW-Gi-iG7" secondAttribute="trailingMargin" id="vu9-hv-0xZ"/>

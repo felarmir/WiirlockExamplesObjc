@@ -15,5 +15,8 @@
 @property (weak, nonatomic) IBOutlet UIProgressView *progressView;
 
 -(IBAction)downloadFile:(id)sender;
+-(IBAction)sepiaFilter:(id)sender;
+-(IBAction)pixelFilter:(id)sender;
+-(IBAction)gaussFilter:(id)sender;
 
 @end

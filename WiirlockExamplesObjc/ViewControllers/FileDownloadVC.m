@@ -12,6 +12,8 @@
 @interface FileDownloadVC ()
 
 @property (strong, nonatomic) WDownloader *downloader;
+@property (nonatomic, strong) CIImage *blankImage;
+@property (nonatomic, strong) CIFilter *filter;
 
 @end
 
@@ -26,6 +28,26 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+-(IBAction)sepiaFilter:(id)sender{
+    _filter = [CIFilter filterWithName:@"CISepiaTone"];
+    [self setFilterToImage];
+}
+-(IBAction)pixelFilter:(id)sender{
+    _filter = [CIFilter filterWithName:@"CIPixellate"];
+    [self setFilterToImage];
+}
+-(IBAction)gaussFilter:(id)sender{
+    _filter = [CIFilter filterWithName:@"CIGaussianBlur"];
+    [self setFilterToImage];
+}
+
+-(void)setFilterToImage {
+    _blankImage = [CIImage imageWithData:[NSData dataWithContentsOfFile:[NSString stringWithFormat:@"%@/1.jpg", DOCUMENTS]]];
+    [_filter setValue:_blankImage forKey:kCIInputImageKey];
+    UIImage *newImage = [UIImage imageWithCIImage:[_filter outputImage]];
+    _imageView.image = newImage;
 }
 
 -(IBAction)downloadFile:(id)sender {
