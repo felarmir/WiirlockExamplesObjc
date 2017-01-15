@@ -8,26 +8,33 @@
 
 #import "ListTableVC.h"
 #import "ListCell.h"
+#import "DataStore.h"
+#import "TaskList+CoreDataProperties.h"
+#import "TaskListEditorController.h"
 
 @interface ListTableVC ()
 
 @end
 
 @implementation ListTableVC
+{
+    NSMutableArray<TaskList*> *dataArray;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    dataArray = [NSMutableArray arrayWithArray:[[DataStore instance] dataArray]];
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 #pragma mark - Table view data source
@@ -37,7 +44,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return [dataArray count];
 }
 
 
@@ -47,9 +54,10 @@
         cell = [[ListCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"TASK"];
     }
     
-    [cell.selectButton setSelectedTask:NO];
+    TaskList *object = [dataArray objectAtIndex:indexPath.row];
+    [cell.selectButton setSelectedTask:object.finished];
     cell.rowNumber.text = [NSString stringWithFormat:@"%lu.", (indexPath.row + 1)];
-    cell.task.text = @"simple text";
+    cell.task.text = object.task;
     
     return cell;
 }
@@ -89,14 +97,16 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([[segue identifier] isEqualToString:@"addSegue"]) {
+        TaskListEditorController *editor = [segue destinationViewController];
+        editor.isSwitchHide = YES;
+    }
 }
-*/
+
 
 @end
