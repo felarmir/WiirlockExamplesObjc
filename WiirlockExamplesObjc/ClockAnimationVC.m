@@ -15,6 +15,7 @@
 
 @end
 
+@implementation ClockAnimationVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
