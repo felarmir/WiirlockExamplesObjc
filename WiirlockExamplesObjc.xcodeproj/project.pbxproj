@@ -25,6 +25,8 @@
 		C3E4AC8B1E22875B009AA3B4 /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E4AC8A1E22875B009AA3B4 /* MenuCell.m */; };
 		C3E4AC8F1E228B83009AA3B4 /* TextOnImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E4AC8E1E228B83009AA3B4 /* TextOnImage.m */; };
 		C3E4AC921E22A94C009AA3B4 /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E4AC911E22A94C009AA3B4 /* ContactViewController.m */; };
+		C3E9E6521E2B41F600D3B8EF /* ClockAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E9E6511E2B41F600D3B8EF /* ClockAnimationVC.m */; };
+		C3E9E6551E2B423400D3B8EF /* ClockLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E9E6541E2B423400D3B8EF /* ClockLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,10 @@
 		C3E4AC8E1E228B83009AA3B4 /* TextOnImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextOnImage.m; path = ViewControllers/TextOnImage.m; sourceTree = "<group>"; };
 		C3E4AC901E22A94C009AA3B4 /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactViewController.h; path = ViewControllers/ContactViewController.h; sourceTree = "<group>"; };
 		C3E4AC911E22A94C009AA3B4 /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactViewController.m; path = ViewControllers/ContactViewController.m; sourceTree = "<group>"; };
+		C3E9E6501E2B41F600D3B8EF /* ClockAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockAnimationVC.h; sourceTree = "<group>"; };
+		C3E9E6511E2B41F600D3B8EF /* ClockAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockAnimationVC.m; sourceTree = "<group>"; };
+		C3E9E6531E2B423400D3B8EF /* ClockLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockLayer.h; sourceTree = "<group>"; };
+		C3E9E6541E2B423400D3B8EF /* ClockLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +149,8 @@
 				C3E4AC871E2284E9009AA3B4 /* MainMenu.m */,
 				C3E4AC891E22875B009AA3B4 /* MenuCell.h */,
 				C3E4AC8A1E22875B009AA3B4 /* MenuCell.m */,
+				C3E9E6531E2B423400D3B8EF /* ClockLayer.h */,
+				C3E9E6541E2B423400D3B8EF /* ClockLayer.m */,
 			);
 			path = WiirlockExamplesObjc;
 			sourceTree = "<group>";
@@ -192,6 +200,8 @@
 				C39B73541E29611100C618BC /* WDownloader.m */,
 				C3B579301E2A2E7800D7C851 /* GardientLayerVC.h */,
 				C3B579311E2A2E7800D7C851 /* GardientLayerVC.m */,
+				C3E9E6501E2B41F600D3B8EF /* ClockAnimationVC.h */,
+				C3E9E6511E2B41F600D3B8EF /* ClockAnimationVC.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -331,9 +341,11 @@
 			files = (
 				C340C9E21E2560E300D1E1B7 /* ContactCell.m in Sources */,
 				C303E4BB1E2400E000BCC44C /* ImageShowHideTVC.m in Sources */,
+				C3E9E6521E2B41F600D3B8EF /* ClockAnimationVC.m in Sources */,
 				C39B73551E29611100C618BC /* WDownloader.m in Sources */,
 				C3E4AC921E22A94C009AA3B4 /* ContactViewController.m in Sources */,
 				C3E4AC4F1E2274DD009AA3B4 /* AppDelegate.m in Sources */,
+				C3E9E6551E2B423400D3B8EF /* ClockLayer.m in Sources */,
 				C39B73521E29604100C618BC /* FileDownloadVC.m in Sources */,
 				C3B579321E2A2E7800D7C851 /* GardientLayerVC.m in Sources */,
 				C3E4AC581E2274DD009AA3B4 /* WiirlockExamplesObjc.xcdatamodeld in Sources */,
