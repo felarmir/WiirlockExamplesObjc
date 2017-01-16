@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) CAShapeLayer *hourHand;
 @property (nonatomic, strong) CAShapeLayer *minuteHand;
+@property (nonatomic, strong) CAShapeLayer *secondHand;
 
 @end
 
@@ -29,16 +30,23 @@
         self.lineWidth = 4;
         
         _hourHand = [CAShapeLayer layer];
-        _hourHand.path = [[UIBezierPath bezierPathWithRect:CGRectMake(-2, -70, 4, 70)] CGPath];
+        _hourHand.path = [[UIBezierPath bezierPathWithRect:CGRectMake(-2, -70, 5, 70)] CGPath];
         _hourHand.fillColor = [[UIColor blackColor] CGColor];
         _hourHand.position = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
         [self addSublayer:_hourHand];
         
         _minuteHand = [CAShapeLayer layer];
-        _minuteHand.path = [[UIBezierPath bezierPathWithRect:CGRectMake(-1, -90, 2, 90)] CGPath];
+        _minuteHand.path = [[UIBezierPath bezierPathWithRect:CGRectMake(-1, -90, 3, 90)] CGPath];
         _minuteHand.fillColor = [[UIColor blackColor] CGColor];
         _minuteHand.position = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
         [self addSublayer:_minuteHand];
+        
+        _secondHand = [CAShapeLayer layer];
+        _secondHand.path = [[UIBezierPath bezierPathWithRect:CGRectMake(0, -90, 1, 90)] CGPath];
+        _secondHand.fillColor = [[UIColor redColor] CGColor];
+        _secondHand.position = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
+        [self addSublayer:_secondHand];
+        
         
     }
     return self;
@@ -47,9 +55,10 @@
 -(void)setTime:(NSDate*)time {
     _time = time;
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-    NSDateComponents *components = [calendar components:NSCalendarUnitHour | NSCalendarUnitMinute fromDate:time];
+    NSDateComponents *components = [calendar components:NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond fromDate:time];
     _hourHand.affineTransform = CGAffineTransformMakeRotation(components.hour / 12.0 * 2.0 * M_PI);
     _minuteHand.affineTransform = CGAffineTransformMakeRotation(components.minute / 60.0 * 2.0 * M_PI);
+    _secondHand.affineTransform = CGAffineTransformMakeRotation(components.second / 60.0 *2.0 * M_PI);
 }
 
 

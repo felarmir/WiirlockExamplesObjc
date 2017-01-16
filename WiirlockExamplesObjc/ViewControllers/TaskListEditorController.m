@@ -32,7 +32,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 -(IBAction)saveTask:(id)sender {
     BOOL okAdd = [dataStore addTask:_taskField.text];

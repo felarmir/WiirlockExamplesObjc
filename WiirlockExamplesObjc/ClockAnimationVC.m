@@ -25,7 +25,9 @@
     [_clockLayer setTime:[NSDate date]];
     [self.view.layer addSublayer:_clockLayer];
     
-    
+    [NSTimer scheduledTimerWithTimeInterval:0.5 repeats:YES block:^(NSTimer * _Nonnull timer) {
+        [_clockLayer setTime:[NSDate date]];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
