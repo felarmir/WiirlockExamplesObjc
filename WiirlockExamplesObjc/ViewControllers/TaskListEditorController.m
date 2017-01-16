@@ -23,6 +23,10 @@
         _taskSwitch.hidden = YES;
         _taskSwitchLabel.hidden = YES;
     }
+    if (!_isSwitchHide) {
+        _taskField.text = _taskList.task;
+        [_taskSwitch setOn:_taskList.finished];
+    }
     dataStore = [DataStore instance];
 }
 
@@ -44,14 +48,11 @@
     }
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(IBAction)setTaskSwitchFinished:(id)sender {
+    _taskList.finished = [sender isOn];
+    _taskList.task = _taskField.text;
+    NSError *error = nil;
+    [_taskList.managedObjectContext save:&error];
 }
-*/
 
 @end

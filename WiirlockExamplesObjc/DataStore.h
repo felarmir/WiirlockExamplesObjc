@@ -11,8 +11,8 @@
 
 @interface DataStore : NSObject
 
-+(id)instance;
--(NSArray*)dataArray;
--(BOOL)addTask:(NSString*)task;
++ (id)instance;
+- (NSArray*)dataArray;
+- (BOOL)addTask:(NSString*)task;
 
 @end
