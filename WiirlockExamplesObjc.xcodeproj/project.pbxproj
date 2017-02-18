@@ -33,6 +33,7 @@
 		C3E9E6641E2BD36600D3B8EF /* TaskListDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E9E6631E2BD36600D3B8EF /* TaskListDataController.m */; };
 		C3E9E66A1E2BD62F00D3B8EF /* DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E9E6691E2BD62F00D3B8EF /* DataStore.m */; };
 		C3E9E66D1E2BE2B800D3B8EF /* TaskListEditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E9E66C1E2BE2B800D3B8EF /* TaskListEditorController.m */; };
+		C3F055D31E58810A006CED2B /* ThreadLearnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F055D21E58810A006CED2B /* ThreadLearnVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,8 @@
 		C3E9E6691E2BD62F00D3B8EF /* DataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStore.m; sourceTree = "<group>"; };
 		C3E9E66B1E2BE2B800D3B8EF /* TaskListEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TaskListEditorController.h; path = ViewControllers/TaskListEditorController.h; sourceTree = "<group>"; };
 		C3E9E66C1E2BE2B800D3B8EF /* TaskListEditorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TaskListEditorController.m; path = ViewControllers/TaskListEditorController.m; sourceTree = "<group>"; };
+		C3F055D11E58810A006CED2B /* ThreadLearnVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadLearnVC.h; sourceTree = "<group>"; };
+		C3F055D21E58810A006CED2B /* ThreadLearnVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadLearnVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +235,8 @@
 				C3E9E65D1E2BCC8300D3B8EF /* SelectButton.m */,
 				C3E9E66B1E2BE2B800D3B8EF /* TaskListEditorController.h */,
 				C3E9E66C1E2BE2B800D3B8EF /* TaskListEditorController.m */,
+				C3F055D11E58810A006CED2B /* ThreadLearnVC.h */,
+				C3F055D21E58810A006CED2B /* ThreadLearnVC.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -388,6 +393,7 @@
 				C3E9E65E1E2BCC8300D3B8EF /* SelectButton.m in Sources */,
 				C3E4AC881E2284E9009AA3B4 /* MainMenu.m in Sources */,
 				C303E4BE1E24011900BCC44C /* ImageHSCell.m in Sources */,
+				C3F055D31E58810A006CED2B /* ThreadLearnVC.m in Sources */,
 				C3E4AC8B1E22875B009AA3B4 /* MenuCell.m in Sources */,
 				C3E4AC8F1E228B83009AA3B4 /* TextOnImage.m in Sources */,
 			);
